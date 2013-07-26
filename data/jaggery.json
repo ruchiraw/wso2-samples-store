@@ -1,0 +1,22 @@
+[
+    {
+        "id": "0",
+        "title": "Jaggery WebSockets",
+        "description": "This demonstrates how you can use web sockets in Jaggery.",
+        "thumbnail": "/data/images/websocket.jpg",
+        "created": {
+            "user": "ruchira@wso2.com",
+            "time": 1374818565824
+        }
+    },
+    {
+        "id": "1",
+        "title": "Jaggery XMLHttpRequest",
+        "description": "This demonstrates how you can use XMLHttpRequest object in Jaggery.",
+        "thumbnail": "/data/images/xmlhttprequest.jpg",
+        "created": {
+            "user": "ruchira@wso2.com",
+            "time": 1374818565824
+        }
+    }
+]

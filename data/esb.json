@@ -1,0 +1,22 @@
+[
+    {
+        "id": "0",
+        "title": "File Proxy",
+        "description": "This demonstrates how you ESB to transfer files between FTP servers",
+        "thumbnail": "/data/images/fileproxy.jpg",
+        "created": {
+            "user": "ruchira@wso2.com",
+            "time": 1374818565824
+        }
+    },
+    {
+        "id": "1",
+        "title": "Message Queueing",
+        "description": "This demonstrates how you use message queues with ESB",
+        "thumbnail": "/data/images/queueing.jpg",
+        "created": {
+            "user": "ruchira@wso2.com",
+            "time": 1374818565824
+        }
+    }
+]

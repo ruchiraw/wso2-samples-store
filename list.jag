@@ -1,0 +1,26 @@
+<%
+var data, title,
+        caramel = require('caramel'),
+        type = request.getParameter('type');
+
+data = require('/data/' + type + '.json');
+title = (type === 'esb' ? 'ESB' : 'Jaggery');
+
+caramel.render({
+    user: {
+        name: 'ruchira',
+        email: 'ruchira.wageesha@gmail.com'
+    },
+    navigation: [
+        {
+            title: 'My Account',
+            url: '/myaccount'
+        }
+    ],
+    samples: {
+        title: title,
+        type: type,
+        data: data
+    }
+});
+%>

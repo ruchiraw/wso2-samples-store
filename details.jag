@@ -1,0 +1,33 @@
+<%
+var data, length, i, details,
+        caramel = require('caramel'),
+        type = request.getParameter('type'),
+        id = request.getParameter('id');
+
+data = require('/data/' + type + '.json');
+length = data.length;
+
+for (i = 0; i < length; i++) {
+    if (data[i].id === id) {
+        details = data[i];
+        break;
+    }
+}
+
+caramel.render({
+    user: {
+        name: 'ruchira',
+        email: 'ruchira.wageesha@gmail.com'
+    },
+    navigation: [
+        {
+            title: 'My Account',
+            url: '/myaccount'
+        }
+    ],
+    sample: {
+        type: type,
+        data: details
+    }
+});
+%>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WSO2 Platform Samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="{{url "/themes/theme0/libs/bootstrap/css/bootstrap.css"}}" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="{{url "/"}}">WSO2</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="{{url "/"}}">Home</a></li>
+                    <li><a href="{{url "/list.jag?type=esb"}}">ESB</a></li>
+                    <li><a href="{{url "/list.jag?type=jaggery"}}">Jaggery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        {{#samples}}
+            {{#esb}}
+                <div class="span12"><h3>{{title}}</h3></div>
+                <div class="span12">
+                    <ul class="thumbnails">
+                        {{#each data}}
+                            <li class="span4">
+                                <div class="thumbnail">
+                                    <a href="{{url "/details.jag"}}?type=esb&id={{id}}">
+                                        <h4 class="title">{{title}}</h4>
+                                    </a>
+                                    <img src="{{url thumbnail}}">
+
+                                    <div class="description">{{description}}</div>
+                                </div>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/esb}}
+            {{#jaggery}}
+                <div class="span12"><h3>{{title}}</h3></div>
+                <div class="span12">
+                    <ul class="thumbnails">
+                        {{#each data}}
+                            <li class="span4">
+                                <div class="thumbnail">
+                                    <a href="{{url "/details.jag"}}?type=jaggery&id={{id}}">
+                                        <h4 class="title">{{title}}</h4>
+                                    </a>
+                                    <img src="{{url thumbnail}}">
+
+                                    <div class="description">{{description}}</div>
+                                </div>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/jaggery}}
+        {{/samples}}
+    </div>
+</div>
+
+<script src="{{url "/themes/theme0/libs/jquery.js"}}"></script>
+<script src="{{url "/themes/theme0/libs/bootstrap/js/bootstrap.js"}}"></script>
+</body>
+</html>
