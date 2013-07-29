@@ -5,14 +5,17 @@ caramel.configs({
     cache: true,
     negotiation: true,
     themer: function () {
-        /*var meta = caramel.meta();
-        if(meta.request.getRequestURI().indexOf('gadget') != -1) {
-            return 'modern';
-        }*/
-        return 'theme0';
+        var meta = caramel.meta(),
+            theme = meta.request.getParameter('theme');
+        if (theme) {
+            session.put('theme', theme);
+        } else {
+            theme = session.get('theme') || 'theme0';
+        }
+        return theme;
     }/*,
-    languagesDir: '/i18n',
-    language: function() {
-        return 'si';
-    }*/
+     languagesDir: '/i18n',
+     language: function() {
+     return 'si';
+     }*/
 });

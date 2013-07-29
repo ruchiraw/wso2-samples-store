@@ -1,0 +1,17 @@
+<div class="span12"><h3>{{title}}</h3></div>
+<div class="span12">
+    <ul class="thumbnails">
+        {{#each data}}
+            <li class="span4">
+                <div class="thumbnail">
+                    <a href="{{url "/details.jag"}}?type=esb&id={{id}}">
+                        <h4 class="title">{{title}}</h4>
+                    </a>
+                    <img src="{{url thumbnail}}">
+
+                    <div class="description">{{description}}</div>
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+</div>
