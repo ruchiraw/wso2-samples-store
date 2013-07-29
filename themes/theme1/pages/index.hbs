@@ -12,6 +12,15 @@
         body {
             padding-top: 60px;
         }
+        h1, h2, h3, h4, h5, h6 {
+            color: #800000;
+        }
+        a, a h1, a h2, a h3, a h4, a h5, a h6 {
+            color: #000000;
+        }
+        html body {
+            background: #BDB76B;
+        }
     </style>
 </head>
 
@@ -29,9 +38,10 @@
 
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li class="active"><a href="{{url "/"}}">Home</a></li>
-                    <li><a href="{{url "/list.jag?type=esb"}}">ESB</a></li>
-                    <li><a href="{{url "/list.jag?type=jaggery"}}">Jaggery</a></li>
+                    <li><a href="{{url "/"}}">Sample Home</a></li>
+                    <li><a href="{{url "/list.jag?type=jaggery"}}">Jaggery Samples</a></li>
+                    <li><a href="{{url "/list.jag?type=esb"}}">ESB Samples</a></li>
+                    <li><a href="{{url "/"}}?theme=theme0">Switch Theme</a></li>
                 </ul>
             </div>
         </div>

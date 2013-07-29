@@ -3,11 +3,11 @@ var render = function (theme, data, meta, require) {
         body: [
             {
                 partial: 'thumbnails',
-                context: data.samples.esb
+                context: data.samples.jaggery
             },
             {
                 partial: 'thumbnails',
-                context: data.samples.jaggery
+                context: data.samples.esb
             }
         ]
     });
