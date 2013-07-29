@@ -6,7 +6,7 @@ This is an example Jaggery application to demonstrate the features of caramel fr
 ##Installing
 
 * Copy `wso2-samples-store` webapp into a Jaggery server which has caramel module installed.
-* You can straightaway try this in [WSO2 UES 1.0.0](http://wso2.com/products/user-engagement-server).
+* You can straightaway try this on [WSO2 UES 1.0.0](http://wso2.com/products/user-engagement-server).
 * If you change the webapp context, you need to update the value of `context` object key in`wso2-samples-store/app.js`
 to match you context.
 
